@@ -1,20 +1,20 @@
 const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-const wave = document.querySelector('.menu__wave');
+const menu__links = document.querySelector('.navbar__menu');
+const menu__wave = document.querySelector('.menu__wave');
 const navbar = document.querySelector('.navbar');
 const menuCont = document.querySelector('.menu__container');
+const wave = document.querySelector('.wave');
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-    wave.classList.toggle('active');
+    menu__links.classList.toggle('active');
     navbar.classList.toggle('active');
     menuCont.classList.toggle('active');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.getElementById('typing-text');
-    const text = ["<h1>Hello World</h1>", "console.log(\"Hello World\");", "cout << \"Hello World\" << endl;"];
+    const text = ["student.", "programmer.", "food enthusiast.", "cat lover."];
     const typingSpeed = 100; // Time in milliseconds between each character
     const deletingSpeed = 50; // Time in milliseconds between each character deletion
     const pauseBetweenTexts = 2000; // Pause before typing starts and after deleting ends
@@ -49,4 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(type, 2000); // Initial delay before starting typing
 });
 
+function updateNavbarColor() {
+  if (!navbar || !wave) return;
 
+  const waveRect = wave.getBoundingClientRect();
+
+  // "completely reached the top" = the wave's top is at/above the top of viewport
+  const reachedTop = waveRect.bottom <= 0;
+
+  navbar.classList.toggle('navbar--white', reachedTop);
+}
+
+updateNavbarColor();
+window.addEventListener('scroll', updateNavbarColor, { passive: true });
+window.addEventListener('resize', updateNavbarColor);
