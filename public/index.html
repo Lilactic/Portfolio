@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Cabin:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Caveat:wght@400..700&family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="This is a very incomplete website where I doxx myself!!!"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="" class="navbar__logo">
+          <h3>Lilliana Wang</h3>
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/resume/" class="navbar__links">Resume</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__links">Hobbies</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero__container">
+        <div class="title">
+          <h1> Lilliana Wang </h1>
+        </div>
+        <div class="subtitle">
+          <h2 id="typing-text"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Section-->
+    <div class="bio">
+      <svg
+        preserveAspectRatio="none"
+        class="wave"
+        style="transition: 0.3s"
+        viewBox="0 0 1440 180"
+      >
+        <path
+          fill="#FFFFFF"
+          d="M0,144L40,120C80,96,160,48,240,51C320,54,400,108,480,135C560,162,640,162,720,135C800,108,880,54,960,42C1040,30,1120,60,1200,84C1280,108,1360,126,1440,120C1520,114,1600,84,1680,66C1760,48,1840,42,1920,39C2000,36,2080,36,2160,54C2240,72,2320,108,2400,129C2480,150,2560,156,2640,153C2720,150,2800,138,2880,132C2960,126,3040,126,3120,105C3200,84,3280,42,3360,45C3440,48,3520,96,3600,102C3680,108,3760,72,3840,51C3920,30,4000,24,4080,24C4160,24,4240,30,4320,30C4400,30,4480,24,4560,33C4640,42,4720,66,4800,69C4880,72,4960,54,5040,60C5120,66,5200,96,5280,96C5360,96,5440,66,5520,45C5600,24,5680,12,5720,6L5760,0L5760,180L5720,180C5680,180,5600,180,5520,180C5440,180,5360,180,5280,180C5200,180,5120,180,5040,180C4960,180,4880,180,4800,180C4720,180,4640,180,4560,180C4480,180,4400,180,4320,180C4240,180,4160,180,4080,180C4000,180,3920,180,3840,180C3760,180,3680,180,3600,180C3520,180,3440,180,3360,180C3280,180,3200,180,3120,180C3040,180,2960,180,2880,180C2800,180,2720,180,2640,180C2560,180,2480,180,2400,180C2320,180,2240,180,2160,180C2080,180,2000,180,1920,180C1840,180,1760,180,1680,180C1600,180,1520,180,1440,180C1360,180,1280,180,1200,180C1120,180,1040,180,960,180C880,180,800,180,720,180C640,180,560,180,480,180C400,180,320,180,240,180C160,180,80,180,40,180L0,180Z"
+        ></path>
+      </svg>
+      <div class="bio__container">
+        <div class="bio__text">
+          <h1>Passionate. <span>Ambitious.</span> Creative.</h1>
+          <p>
+            I am a junior attending Friendswood High School, pursuing my
+            passion in computer science. I've been learning as much as I can over
+            the past few years, getting a good grasp on Java, JavaScript, and C++.
+            I've explored the diverse fields of computer science by
+            competing in programming competitions, learning computer hardware and 
+            robotics, doing meaningful research, building software, and even learning
+            web development. In fact, this is my first website!
+          </p>
+          <a href=""><button>Learn More >></button></a>
+        </div>
+        <div class="bio__image">
+          <img
+              src="images/portrait.jpg"
+              alt="portrait"
+            />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+      <div class="projects__container">
+        <div class="projects__title">
+          <h1>Projects and Research</h1>
+        </div>
+        <div class="projects__grid">
+          <div class="project__card">
+            <div class="project__image" style="background-image:url('images/2025-ASA-Muffler.jpg')"></div>
+            <div class="project__text"><h3>AI Application in Acoustic Muffler Design</h3></div>
+            <a href="" class="project__button"><button href="">See more >></button></a>
+          </div>
+          <div class="project__card">
+            <div class="project__image" style="background-image:url('images/vivaverde.png')"></div>
+            <div class="project__text"><h3>Viva Verde: TSA Webmasters 2025</h3></div>
+            <a href="" class="project__button"><button href="">See more >></button></a>
+          </div>
+          <div class="project__card">
+            <div class="project__image" style="background-image:url('images/TSA-2026.png')"></div>
+            <div class="project__text"><h3>Resource Hub: TSA Webmasters 2026</h3></div>
+            <a href="" class="project__button"><button href="">See more >></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section -->
+    <div class="resume">
+      <div class="resume__container">
+        <div class="resume__title">
+          <h1>Awards and Extracurriculars</h1>
+        </div>
+        <div class="resume__content">
+          <a href="/lilliana/resume" class="resume__button"><button>View full resume >></button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies">
+      <div class="hobbies__container">
+        <div class="hobbies__title">
+          <h1>Just For Fun</h1>
+        </div>
+        <div class="hobbies__grid">
+          <div class="hobby__card">
+            <div class="hobby__image" style="background-image:url('images/hobby1.jpg')"></div>
+            <div class="hobby__text"><h3>Culinary</h3></div>
+          </div>
+          <div class="hobby__card">
+            <div class="hobby__image" style="background-image:url('images/hobby2.jpg')"></div>
+            <div class="hobby__text"><h3>Calligraphy</h3></div>
+          </div>
+          <div class="hobby__card">
+            <div class="hobby__image" style="background-image:url('images/hobby3.jpg')"></div>
+            <div class="hobby__text"><h3>Piano</h3></div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer Section -->
+    <div class ="footer">
+      <div class="footer__container">
+        <div class="footer__text">
+          <h3>Lilliana Wang</h3>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a href="/lilliana/" class="footer__links">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__links">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__links">Projects</a>
+            </li>
+            <li class="footer__item">
+              <a href="/lilliana/resume" class="footer__links">Resume</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__links">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>© Lilliana Wang 2026. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

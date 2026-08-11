@@ -1,6 +1,6 @@
 :root {
     --light: #FFFFFF;
-    --dark: #383F51;
+    --dark: #202C39;
     --accent-1: #B9DFF6;
     --accent-2: #D90268;
     --accent-3: #468C98;
@@ -399,13 +399,12 @@
     color: var(--light);
     padding: 8px 8px;
     outline: none;
-    border-width: 2px;
-    border-color: var(--dark);
+    border: none;
     border-radius: 8px;
     font-family: 'Cabin', sans-serif;
     font-size: 1rem;
     width: 170px;
-    height: 50px;
+    height: 45px;
     z-index: 1;
     margin: 8px 0;
     cursor: pointer;
@@ -506,13 +505,32 @@
     justify-content: space-between;
     align-items: left;
     gap: 8px;
-    height: 290px;
-    width: 29%;
+    height: auto;
+    width: 30%;
     min-width: 200px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1.5px solid var(--light);
+}
+
+.project__card:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.02);
+    background-color: var(--light);
+    h3 {
+        color: var(--dark);
+    }
+    .project__button button {
+        color: var(--dark);
+        border: 1.5px solid var(--dark);
+    }
+    .project__image {
+        border: 1.5px solid var(--dark);
+    }
 }
 
 .project__image {
-    height: 200px;
+    height: 250px;
     min-height: 200px;
     width: 100%;
     min-width: 250px;
@@ -525,6 +543,7 @@
     transition-timing-function: cubic-bezier(.2,0,.7,1);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    border: none;
 }
 
 .project__card .project__image:hover{
@@ -551,7 +570,6 @@
 .project__button button{
     background: none;
     color: var(--light);
-    padding: 4px 4px;
     outline: none;
     box-shadow: none;
     border: 1.5px solid var(--light);
@@ -568,6 +586,32 @@
 
 .projects__container button:hover {
     transform: scale(1.02);
+}
+
+.resume {
+    background-color: var(--light);
+    position: relative;
+    top: 0;
+}
+
+.resume__container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 64px 96px 64px;
+    width: 100%;
+}
+
+.hobbies {
+    background-color: var(--light);
+    position: relative;
+    top: 0;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 64px 96px 64px;
+    width: 100%;
 }
 
 .footer {
